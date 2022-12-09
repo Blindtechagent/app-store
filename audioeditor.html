@@ -1,0 +1,42 @@
+<!DOCTYPE html> <html lang="en">  <head>     <meta charset="UTF-8">     <meta name="viewport" content="width=device-width, initial-scale=1.0">     <meta http-equiv="X-UA-Compatible" content="ie=edge">   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Audio editor</title>  <style> body{background:orange;}    .container{background:purple; height:500px; width:300px; display:block; margin:0px; border:0px;}  .box{background:white; color:black; text-align:center; height:200px; width:200px; display:none; position:relative; border:0px; border-radius:15px; }  p{font-size:24px; color:black; }     .download{background:#368BC1; color:gold; :0px; border-radius:5px; text-align:center; padding:5px; }  h1{font-size:45px; color:blue; text-align:center;} 
+.btn{ background:#BCE954; color:black; font-weight:bold; display:block; height:50px; width:200px; margin:15px;
+} </style>
+ <script>
+$(document).ready(function(){
+ $("#btn").click(function(){
+$("#box").toggle(500, function() { document.getElementById("box2").style.display = "none" 
+} );
+  });
+});
+</script>   <script>
+$(document).ready(function(){
+  $("#btn2").click(function(){
+    $("#box2").toggle(500, function() { document.getElementById("box").style.display = "none" 
+} );
+  });
+});
+</script>
+
+
+
+</head>
+<body>
+<h1>Audio editor</h1>
+<center>
+<div class="container">
+<br>
+<br>
+<button class="btn" id="btn">Audio MP3 editor</button>
+<div class="box" id="box">
+<p>App name Audio MP3 editor</p>    <p>App size 11.8MB</p>    <button class="download" onclick="location.href='https://hybridf2l.herokuapp.com/c28/Audio-MP3-editor.APK'">Download</button>    </div>
+<button class="btn" id="btn2">Audio lab pro</button>
+<div class="box" id="box2">
+<p>App name Audio lab pro</p>    <p>App size 49.7MB</p>    <button class="download" onclick="location.href='https://hybridf2l.herokuapp.com/c29/Audio-lab-pro.APK'">Download</button>
+</div>
+<div class="box">
+<p>App name Voice changer with effects</p>    <p>App size 8.3MB</p>    <button class="download" onclick="location.href='https://hybridf2l.herokuapp.com/c30/Voice_changer_with_effects_com.baviux.voicechanger.apk'">Download</button>
+</div>
+</div>
+</body>
+</html>

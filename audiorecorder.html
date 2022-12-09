@@ -1,0 +1,53 @@
+<!DOCTYPE html> <html lang="en">  <head>     <meta charset="UTF-8">     <meta name="viewport" content="width=device-width, initial-scale=1.0">     <meta http-equiv="X-UA-Compatible" content="ie=edge"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  <title>Audio recorder</title>  <style> body{background:orange;}    .container{background:purple; height:500px; width:300px; display:block; margin:0px; border:0px;}  .box{background:white; color:black; text-align:center; height:200px; width:200px; display:none; position:relative; border:0px; border-radius:15px; }  p{font-size:24px; color:black; }     .download{background:#368BC1; color:gold; :0px; border-radius:5px; text-align:center; padding:5px; }  h1{font-size:45px; color:blue; text-align:center;} 
+.btn{ background:#BCE954; color:red; display:block; height:50px; width:200px; margin:15px;
+} </style>
+<script>
+$(document).ready(function(){
+ $("#btn").click(function(){
+$("#box").toggle(500, function() { document.getElementById("box2").style.display = "none" 
+document.getElementById("box3").style.display = "none" 
+} );
+  });
+});
+</script>   <script>
+$(document).ready(function(){
+  $("#btn2").click(function(){
+    $("#box2").toggle(500, function() { document.getElementById("box").style.display = "none" 
+document.getElementById("box3").style.display = "none" 
+} );
+  });
+});
+</script>
+   <script>
+$(document).ready(function(){
+  $("#btn3").click(function(){
+    $("#box3").toggle(500, function() { document.getElementById("box").style.display = "none" 
+document.getElementById("box2").style.display = "none"
+} );
+  });
+});
+</script>
+      
+</head>
+<body>
+<h1>Audio recorder</h1>
+<br>
+<center>
+    <div class="container">
+<br>
+<br>
+<button class="btn" id="btn">All that recorder</button>
+<div class="box" id="box">    <p>App name All that recorder</p>    <p>App size 1.4MB</p>        <button class="download" onclick="location.href='https://hybridf2l.herokuapp.com/b8a/All-that-recorder.APK'">Download</button>    </div>
+<button class="btn" id="btn2">Amazing audio MP3 recorder</button>
+<div class="box" id="box2">
+<p>App name amazing audio MP3 recorder</p>    <p>App size 6.1MB</p>    <button class="download" onclick="location.href='https://hybridf2l.herokuapp.com/b8b/Amazing-audio-MP3-recorder.APK'">Download</button>    </div>
+<button class="btn" id="btn3">easy voice recorder pro</button>
+<div class="box" id="box3">    <p>App name Easy voice recorder pro</p>    <p>App size 6.3MB</p>    <button class="download" onclick="location.href='https://hybridf2l.herokuapp.com/b8d/Easy_Voice_Recorder_Pro.apk'">Download</button>
+</div>
+<div class="box">    <p>App name Echo</p>    <p>App size 509KB</p>    <button class="dowmload" onclick="location.href='https://hybridf2l.herokuapp.com/b8e/Echo.apk'">Download</button>
+</div>
+<div class="box">    <p>App name HI-Q MP3 voice recorder pro</p>    <p>App size 4.2MB</p>    <button class="download" onclick="location.href='https://hybridf2l.herokuapp.com/b8f/Hi-Q-MP3-voice-recorder-pro.apk'">Download</button>
+</div>
+</div>
+</body>
+</html>

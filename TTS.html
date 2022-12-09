@@ -1,0 +1,97 @@
+<!DOCTYPE html> <html lang="en">  <head>     <meta charset="UTF-8">     <meta name="viewport" content="width=device-width, initial-scale=1.0">     <meta http-equiv="X-UA-Compatible" content="ie=edge"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  <title>Text to speech</title>  <style> body{background:orange;}    .container{background:purple; height:500px; width:300px; display:block; margin:0px; border:0px;}  .box{background:white; color:black; text-align:center; height:200px; width:200px; display:none; position:relative; border:0px; border-radius:15px; }  p{font-size:24px; color:black; }     .download{background:#368BC1; color:gold; :0px; border-radius:5px; text-align:center; padding:5px; }  h1{font-size:45px; color:blue; text-align:center;} 
+.btn{ background:#BCE954; color:red; display:block; height:50px; width:200px; margin:15px;
+} </style>
+<script>
+$(document).ready(function(){
+ $("#btn").click(function(){
+$("#box").toggle(500, function() { document.getElementById("box2").style.display = "none" 
+document.getElementById("box3").style.display = "none" 
+document.getElementById("box4").style.display = "none"
+document.getElementById("box5").style.display = "none"
+} );
+  });
+});
+</script>   <script>
+$(document).ready(function(){
+  $("#btn2").click(function(){
+    $("#box2").toggle(500, function() { document.getElementById("box").style.display = "none" 
+document.getElementById("box3").style.display = "none" 
+document.getElementById("box4").style.display = "none"
+document.getElementById("box5").style.display = "none"
+} );
+  });
+});
+</script>
+   <script>
+$(document).ready(function(){
+  $("#btn3").click(function(){
+    $("#box3").toggle(500, function() { document.getElementById("box").style.display = "none" 
+document.getElementById("box2").style.display = "none"
+document.getElementById("box4").style.display = "none"
+document.getElementById("box5").style.display = "none"
+} );
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#btn4").click(function(){
+    $("#box4").toggle(500, function() { document.getElementById("box").style.display = "none" 
+document.getElementById("box2").style.display = "none"
+
+document.getElementById("box3").style.display = "none"
+document.getElementById("box5").style.display = "none"
+} );
+  });
+});
+</script>  
+<script>
+$(document).ready(function(){
+  $("#btn5").click(function(){
+    $("#box5").toggle(500, function() { document.getElementById("box").style.display = "none" 
+document.getElementById("box2").style.display = "none"
+document.getElementById("box4").style.display = "none"
+document.getElementById("box3").style.display = "none"
+} );
+  });
+});
+</script>      
+<script>
+$(document).ready(function(){
+  $("#btn6").click(function(){
+    $("#box6").toggle(500, function() { document.getElementById("box").style.display = "none" 
+document.getElementById("box2").style.display = "none"
+document.getElementById("box4").style.display = "none"
+document.getElementById("box3").style.display = "none"
+document.getElementById("box5").style.display = "none"} );
+  });
+});
+</script>    </head>
+<body>
+<h1>Text to speech</h1>
+<br>
+<center>
+    <div class="container">
+<br>
+<br>
+<button class="btn" id="btn">Auto TTS</button>
+<div class="box" id="box">    <p>App name Auto TTS</p>    <p>App size 13.1MB</p>        <button class="download" onclick="location.href='https://hybridf2l.herokuapp.com/12b0/Auto-TTS+_V_5.3.5.apk'">Download</button>    </div>
+<button class="btn" id="btn2">eSpeak NG</button>
+<div class="box" id="box2">
+<p>App name eSpeak NG</p>    <p>App size 10.6MB</p>    <button class="download" onclick="location.href='https://hybridf2l.herokuapp.com/12b3/eSpeak-NG_V_2.6.1.apk'">Download</button>    </div>
+<button class="btn" id="btn3">ETI Eloquence TTS</button>
+<div class="box" id="box3">    <p>App name ETI Eloqence TTS</p>    <p>App size 7.9MB</p>    <button class="download" onclick="location.href='https://hybridf2l.herokuapp.com/12b7/ETI-Eloquence-TTS_V_1.5.0.apk'">Download</button>
+</div>
+<button class="btn" id="btn4">Flite Mimic TTS</button> 
+<div class="box" id="box4">    <p>App name Flite Mimic TTS</p>    <p>App size 2.3MB</p>    <button class="dowmload" onclick="location.href='https://hybridf2l.herokuapp.com/136c/Flite-Mimic-TTS---Text-to-Speech.apk'">Download</button>
+</div>
+<button class="btn" id="btn5">Multilingual tts</button>
+<div class="box" id="box5">    <p>App name Multilingual tts</p>    <p>App size 6.6MB</p>    <button class="download" onclick="location.href='https://hybridf2l.herokuapp.com/136d/Multilingual-TTS-v1.70.apk'">Download</button>
+</div>
+<button class="btn" id="btn6">RH voice</button>
+<div class="box" id="box6">    <p>App name RH voice</p>    <p>App size 9.5MB</p>    <button class="download" onclick="location.href='https://hybridf2l.herokuapp.com/1873/com.github.olga_yakovleva.rhvoice.android.apk'">Download</button>
+</div>
+
+</div>
+</body>
+</html>
