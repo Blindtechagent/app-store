@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Image Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <section class="image-generator">
+    <div class="content">
+      <h2>AI Image Maker</h2>
+<p>Generate images from text descriptions using this JavaScript-powered AI Image Generator.</p>
+      <form action="#" class="generate-form">
+        <label for="description">Description:</label>
+        <input id="description" class="prompt-input" type="text" placeholder="Describe what you want to see" required>
+        <div class="controls">
+          <label for="image-quantity">Number of Images:</label>
+          <select id="image-quantity" class="img-quantity">
+            <option value="1">1 Image</option>
+            <option value="2" selected>2 Images</option>
+            <option value="3">3 Images</option>
+            <option value="4">4 Images</option>
+          </select>
+          <button type="submit" class="generate-btn">Generate</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  <section class="image-gallery">
+    <!-- Generated image cards will be displayed here -->
+  </section>
+</body>
+</html>
